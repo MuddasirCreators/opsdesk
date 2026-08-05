@@ -330,17 +330,17 @@ function renderRoute(pathname) {
 
     stopPolling();
 
-    const page =
+   const page =
+    routes[pathname] ||
+    renderDashboard;
 
-        routes[pathname] ||
+renderLayout(page, pathname);
 
-        renderDashboard;
-
-    renderLayout(page);
-
+if (pathname !== "/login") {
     bindNavigation();
+}
 
-    startPolling(pathname);
+startPolling(pathname);
 
 }
 
