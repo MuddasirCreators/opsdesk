@@ -1,0 +1,29 @@
+{
+  "name": "opsdesk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "coverage": "vitest run --coverage"
+
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/user-event": "^14.6.3",
+    "eslint": "^9.0.0",
+    "jsdom": "^30.0.1",
+    "prettier": "^3.0.0",
+    "vite": "^8.1.1",
+    "vitest": "^3.2.7"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.26.25"
+  }
+}
